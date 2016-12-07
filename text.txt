@@ -1,1 +1,30 @@
-God you are faithful
+/Project Mnanagement Application
+//Authour by Samuel D Baba
+//Year 2016
+
+#include<iostream>
+#include<fstream>
+#include<string>
+
+using namespace std;
+
+class Hallam_Uni_Project {
+private:
+	string projectName;
+	string projectDescription;
+	string projectStart;
+	string projectEnd;
+};
+
+int main() {
+	ifstream file("project.txt");
+	string temp;
+	getline(file, temp);
+
+	while (std::getline(file, temp)) {
+		cout << temp << "\n";
+	};
+
+	cin >> temp;
+	return 0;
+}
